@@ -1,11 +1,36 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 nav {
+    background-color: #1b5e20;
+    padding: 15px 0;
     text-align: center;
-    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 .hero {
@@ -18,15 +43,43 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #333;
     text-align: center;
     padding: 0 20px;
+    position: relative;
+}
+
+/* Półprzezroczyste tło pod napisami, żeby były zawsze czytelne */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero h1, .hero p {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
 .hero h1 {
     margin: 0 0 10px 0;
+    font-size: 32px;
 }
 
 .hero p {
     margin: 0;
+    font-size: 18px;
+}
+
+section {
+    padding: 40px 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 8px;
 }
