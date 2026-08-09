@@ -3,21 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIASI - Serwis</title>
+    <title>AIASI - Serwis Elektromechaniczny</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            /* Ustawiamy Twój obrazek jako tło */
-            background-image: url('tlo.jpeg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            min-height: 100vh;
+        body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+        
+        /* Tło strony */
+        .hero { 
+            background-image: url('tlo.jpeg'); background-size: cover; 
+            background-position: center; height: 100vh; display: flex; 
+            flex-direction: column; justify-content: center; align-items: center;
+            color: white; text-align: center;
         }
+
+        /* Menu */
+        nav { background: #1b5e20; padding: 15px; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+
+        /* Sekcje */
+        section { padding: 50px 20px; max-width: 800px; margin: auto; background: white; }
+        h2 { color: #1b5e20; border-bottom: 2px solid #1b5e20; display: inline-block; }
+        
+        .mapa { margin-top: 20px; width: 100%; height: 300px; background: #ddd; display: flex; justify-content: center; align-items: center; }
     </style>
 </head>
 <body>
+
+<nav>
+    <a href="#start">Start</a>
+    <a href="#onas">O nas</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
+
+<div id="start" class="hero">
+    <h1>AIASI - Elektronarzędzia Serwis</h1>
+    <p>Naprawa elektronarzędzi , maszyn i urządzeń w Kolonii Łomnickiej</p>
+</div>
+
+<section id="onas">
+    <h2>O nas</h2>
+    <p>Zajmujemy się serwisem i naprawą elektronarzędzi oraz sprzętu domowego, warsztatowego i przemysłowego. Naprawiamy urządzenia większości znanych i innych producentów
+     - od przydomowych wkrętarek po ciężki sprzęt do zadań specjalnych.
+    Wiemy jak uciążliwa jest awaria narzędzi w trakcie pracy. Dlatego do każdego zlecenia podchodzimy indywidualnie,z dużą dbałością o precyzję i szczegóły.
+    Nie robimy nic ''na oko'' - zależy nam na tym, aby naprawiony sprzęt służył Ci bezawaryjnie przez długi czas.
+    Współpraca krok po kroku - diagnoza - wycena - Twoja akceptacja kosztów - naprawa i testy.
+    W trakcie naprawy jesteśmy z Tobą pod telefonem. Informujemy na bieżąco o przebiegu prac, naszych spostrzeżeniach czy ewentualnych dodatkowych kwestiach.
+    Jeśli mamy jakieś zalecenia co do dalszej eksploatacji sprzętu - chętnie się nimi dzielimy.
+    Chcemy , abyś po odebraniu narzędzi wrócił do pracy z poczuciem dobrze wydanych pieniędzy i pewnością, że Twój sprzęt Cię nie zawiedzie.</p>
+</section>
+
+<section id="galeria">
+    <h2>Galeria</h2>
+    <p>Tutaj wkrótce pojawią się zdjęcia naszych realizacji (naprawione urządzenia, serwisowane maszyny).</p>
+</section>
+
+<section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Telefon: <strong>[695 615 124]</strong></p>
+    <p>Adres: Kolonia Łomnicka,46-300 Olesno.</p>
+    <div class="mapa">
+        <!-- Tu w przyszłości wkleimy kod mapy Google -->
+        <p>Miejsce na mapę dojazdu</p>
+    </div>
+</section>
+
 </body>
 </html>
