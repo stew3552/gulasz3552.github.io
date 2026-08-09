@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero {
+    background-image: url('tlo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    margin: 0 0 10px 0;
+}
+
+.hero p {
+    margin: 0;
+}
