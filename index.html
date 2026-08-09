@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIASI - Serwis Elektromechaniczny</title>
+    <title>AIASI - Elektronarzędzia Serwis</title>
     <style>
-        body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+        body { margin: 0; font-family: Arial, sans-serif; }
         
-        /* Tło strony */
-        .hero { 
-            background-image: url('tlo.jpeg'); background-size: cover; 
-            background-position: center; height: 100vh; display: flex; 
-            flex-direction: column; justify-content: center; align-items: center;
-            color: white; text-align: center;
-        }
-
         /* Menu */
         nav { background: #1b5e20; padding: 15px; position: sticky; top: 0; z-index: 1000; }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
 
-        /* Sekcje */
-        section { padding: 50px 20px; max-width: 800px; margin: auto; background: white; }
-        h2 { color: #1b5e20; border-bottom: 2px solid #1b5e20; display: inline-block; }
-        
-        .mapa { margin-top: 20px; width: 100%; height: 300px; background: #ddd; display: flex; justify-content: center; align-items: center; }
+        /* Sekcja powitalna z tłem */
+        .hero {
+            background-image: url('tlo.jpg');
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero h1 { font-size: 2.5em; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); }
+        .hero p { font-size: 1.2em; text-shadow: 1px 1px 3px rgba(0,0,0,0.7); }
+
+        /* Pozostałe sekcje */
+        section { padding: 50px 20px; max-width: 800px; margin: auto; line-height: 1.6; }
+        h2 { color: #1b5e20; border-bottom: 2px solid #1b5e20; padding-bottom: 5px; }
+
+        .mapa { margin-top: 20px; width: 100%; height: 300px; background: #eee; text-align: center; line-height: 300px; color: #666; }
     </style>
 </head>
 <body>
@@ -37,19 +47,17 @@
 
 <div id="start" class="hero">
     <h1>AIASI - Elektronarzędzia Serwis</h1>
-    <p>Naprawa elektronarzędzi , maszyn i urządzeń w Kolonii Łomnickiej</p>
+    <p>Naprawa elektronarzędzi, maszyn i urządzeń w Kolonii Łomnickiej</p>
 </div>
 
 <section id="onas">
     <h2>O nas</h2>
-    <p>Zajmujemy się serwisem i naprawą elektronarzędzi oraz sprzętu domowego, warsztatowego i przemysłowego. Naprawiamy urządzenia większości znanych i innych producentów
-     - od przydomowych wkrętarek po ciężki sprzęt do zadań specjalnych.
-    Wiemy jak uciążliwa jest awaria narzędzi w trakcie pracy. Dlatego do każdego zlecenia podchodzimy indywidualnie,z dużą dbałością o precyzję i szczegóły.
-    Nie robimy nic ''na oko'' - zależy nam na tym, aby naprawiony sprzęt służył Ci bezawaryjnie przez długi czas.
-    Współpraca krok po kroku - diagnoza - wycena - Twoja akceptacja kosztów - naprawa i testy.
-    W trakcie naprawy jesteśmy z Tobą pod telefonem. Informujemy na bieżąco o przebiegu prac, naszych spostrzeżeniach czy ewentualnych dodatkowych kwestiach.
-    Jeśli mamy jakieś zalecenia co do dalszej eksploatacji sprzętu - chętnie się nimi dzielimy.
-    Chcemy , abyś po odebraniu narzędzi wrócił do pracy z poczuciem dobrze wydanych pieniędzy i pewnością, że Twój sprzęt Cię nie zawiedzie.</p>
+    <p>Zajmujemy się serwisem i naprawą elektronarzędzi oraz sprzętu domowego, warsztatowego i przemysłowego. Naprawiamy urządzenia większości znanych i innych producentów – od przydomowych wkrętarek po ciężki sprzęt do zadań specjalnych.</p>
+    <p>Wiemy jak uciążliwa jest awaria narzędzi w trakcie pracy. Dlatego do każdego zlecenia podchodzimy indywidualnie, z dużą dbałością o precyzję i szczegóły. Nie robimy nic "na oko" – zależy nam na tym, aby naprawiony sprzęt służył Ci bezawaryjnie przez długi czas.</p>
+    <p>Współpraca krok po kroku – diagnoza – wycena – Twoja akceptacja kosztów – naprawa i testy.</p>
+    <p>W trakcie naprawy jesteśmy z Tobą pod telefonem. Informujemy na bieżąco o przebiegu prac, naszych spostrzeżeniach czy ewentualnych dodatkowych kwestiach.</p>
+    <p>Jeśli mamy jakieś zalecenia co do dalszej eksploatacji sprzętu – chętnie się nimi dzielimy.</p>
+    <p>Chcemy, abyś po odebraniu narzędzi wrócił do pracy z poczuciem dobrze wydanych pieniędzy i pewnością, że Twój sprzęt Cię nie zawiedzie.</p>
 </section>
 
 <section id="galeria">
@@ -59,8 +67,8 @@
 
 <section id="kontakt">
     <h2>Kontakt</h2>
-    <p>Telefon: <strong>[695 615 124]</strong></p>
-    <p>Adres: Kolonia Łomnicka,46-300 Olesno.</p>
+    <p>Telefon: <strong>695 615 124</strong></p>
+    <p>Adres: Kolonia Łomnicka, 46-300 Olesno.</p>
     <div class="mapa">
         <!-- Tu w przyszłości wkleimy kod mapy Google -->
         <p>Miejsce na mapę dojazdu</p>
