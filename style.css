@@ -1,45 +1,46 @@
-/* Ustawienia dla bloku ze zdjęciem */
-/* Wyśrodkowujemy cały blok ze zdjęciem na środku strony */
+/* Wyśrodkowanie całej strony */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Główny kontener ze zdjęciem – ustawiony na środku */
 .hero {
-    display: flex;
-    justify-content: center; /* To ustawia zdjęcie na środku w poziomie */
-    width: 100%;
     position: relative;
-    margin-bottom: 20px;
-}
-
-.hero-bg {
     width: 100%;
-    max-width: 1000px; /* Ogranicza szerokość, żeby zdjęcie nie było gigantyczne */
-    height: auto;
-    display: block;
+    max-width: 1000px;
+    margin: 20px auto; /* "auto" po bokach idealnie centruje blok na ekranie */
 }
 
+/* Obrazek tła */
 .hero-bg {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 4px;
 }
 
-/* Ustawienia dla sekcji tekstowych poniżej zdjęcia */
-section { 
-    background: white; 
-    margin: 20px 10px; /* Zwiększony odstęp od góry */
-    padding: 15px; 
-    border-radius: 4px; 
-    clear: both; /* Gwarantuje, że sekcje nie będą nachodzić na siebie */
-}
-
-/* Ustawienia dla napisów na zdjęciu */
+/* Napisy nałożone bezpośrednio na środek zdjęcia */
 .hero-content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
-    padding: 15px 25px;
-    border-radius: 6px;
+    transform: translate(-50%, -50%); /* Matematycznie centruje tekst na środku obrazka */
+    background: rgba(0, 0, 0, 0.6); /* Półprzezroczyste ciemne tło, żeby napisy były czytelne */
+    padding: 20px;
+    border-radius: 8px;
     color: white;
-    text-align: center;
     width: 80%;
+}
+
+.hero-content h1 { 
+    font-size: 22px; 
+    margin: 0 0 10px 0; 
+}
+
+.hero-content p { 
+    font-size: 14px; 
+    margin: 5px 0; 
 }
