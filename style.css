@@ -1,8 +1,18 @@
 /* Ustawienia dla bloku ze zdjęciem */
+/* Wyśrodkowujemy cały blok ze zdjęciem na środku strony */
 .hero {
-    position: relative;
+    display: flex;
+    justify-content: center; /* To ustawia zdjęcie na środku w poziomie */
     width: 100%;
-    margin-bottom: 30px; /* To odsunie białe sekcje w dół, żeby nie przykrywały logo */
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hero-bg {
+    width: 100%;
+    max-width: 1000px; /* Ogranicza szerokość, żeby zdjęcie nie było gigantyczne */
+    height: auto;
+    display: block;
 }
 
 .hero-bg {
