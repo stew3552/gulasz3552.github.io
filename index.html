@@ -5,7 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIASI - Elektronarzędzia Serwis</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* --- STYLIZACJA SEKCJI O NAS --- */
+        #o-nas-sekcja {
+            position: relative;
+            margin-top: 50px;
+        }
+        #o-nas-sekcja h2 {
+            position: relative;
+            display: inline-block;
+            margin-right: 30px;
+            font-size: 2.5em;
+        }
+        .hopek {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40px;
+            height: 60px;
+            animation: chodz-ze-srubokretem 1.5s infinite ease-in-out;
+            background-color: #333;
+            border-radius: 10px 10px 5px 5px;
+            transform-origin: bottom center;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+        .hopek::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 10px;
+            width: 20px;
+            height: 20px;
+            background-color: #ffcc99;
+            border-radius: 50%;
+        }
+        .hopek::after {
+            content: '';
+            position: absolute;
+            top: 25px;
+            right: -15px;
+            width: 10px;
+            height: 4px;
+            background-color: #cc0000;
+            border-radius: 2px;
+            box-shadow: 12px 0 0 0 #999, 12px -2px 0 2px #999;
+        }
+        @keyframes chodz-ze-srubokretem {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            25% { transform: translateY(-10px) rotate(-5deg); }
+            50% { transform: translateY(0) rotate(0deg); }
+            75% { transform: translateY(-10px) rotate(5deg); }
+        }
+    </style>
 </head>
+
 <body>
 
     <!-- Menu nawigacyjne -->
@@ -27,8 +80,11 @@
     </div>
 
     <!-- Pozostałe sekcje strony -->
-    <section id="onas">
+    <section id="o-nas-sekcja">
+        <div style="position: relative;">
         <h2>O nas</h2>
+            <div class="hopek"></div>
+        </div>
         <p>Zajmujemy się serwisem i naprawą elektronarzędzi oraz sprzętu domowego, warsztatowego i przemysłowego. Naprawiamy urządzenia większości znanych i innych producentów – od przydomowych wkrętarek po ciężki sprzęt do zadań specjalnych.</p>
 <p>Wiemy, jak uciążliwa jest awaria narzędzi w trakcie pracy. Dlatego do każdego zlecenia podchodzimy indywidualnie, z dużą dbałością o precyzję i szczegóły. Nie robimy nic "na oko" – zależy nam na tym, aby naprawiony sprzęt służył Ci bezawaryjnie przez długi czas.</p>
 <p>Współpraca krok po kroku – diagnoza – wycena – Twoja akceptacja kosztów – naprawa i testy.</p>
